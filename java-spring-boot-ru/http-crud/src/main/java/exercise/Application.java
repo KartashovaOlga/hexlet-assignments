@@ -40,7 +40,7 @@ public class Application {
     }
 
     @PostMapping("/posts")
-    public Page create(@RequestBody Post post) {
+    public Post create(@RequestBody Post post) {
         posts.add(post);
         return post;
     }
