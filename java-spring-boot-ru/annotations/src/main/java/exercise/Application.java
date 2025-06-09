@@ -14,7 +14,7 @@ public class Application {
             if (method.isAnnotationPresent(Inspect.class)) {
 
                 System.out.printf("Method %s returns a value of type %s%n",
-                        method.getName(), method.getReturnType()..getSimpleName());
+                        method.getName(), method.getReturnType().getSimpleName());
             }
         }
         // END
