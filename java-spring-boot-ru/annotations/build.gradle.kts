@@ -1,16 +1,9 @@
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    java
-    kotlin("jvm") version ("1.9.23")
     application
     id("com.github.ben-manes.versions") version "0.48.0"
-}
-
-kotlin {
-    jvmToolchain(24)
 }
 
 group = "exercise"
